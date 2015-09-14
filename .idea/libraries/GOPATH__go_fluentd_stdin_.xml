@@ -1,0 +1,43 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;go-fluentd-stdin&gt;">
+    <CLASSES>
+      <root url="file://$USER_HOME$/go/src/github.com" />
+      <root url="file://$USER_HOME$/go/src/gopkg.in" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <excluded>
+      <root url="file://$USER_HOME$/go/src/github.com/opencontainers/specs/.git" />
+      <root url="file://$USER_HOME$/go/src/github.com/docker/docker/hack/make/.resources-windows" />
+      <root url="file://$USER_HOME$/go/src/github.com/opencontainers/runc/Godeps/_workspace" />
+      <root url="file://$USER_HOME$/go/src/github.com/coreos/go-systemd/.git" />
+      <root url="file://$USER_HOME$/go/src/github.com/fluent/fluent-logger-golang/.git" />
+      <root url="file://$USER_HOME$/go/src/github.com/philhofer/fwd/.git" />
+      <root url="file://$USER_HOME$/go/src/github.com/docker/docker/pkg/archive/testdata" />
+      <root url="file://$PROJECT_DIR$" />
+      <root url="file://$USER_HOME$/go/src/github.com/docker/docker/hack/make/.build-deb" />
+      <root url="file://$USER_HOME$/go/src/github.com/golang/protobuf/.git" />
+      <root url="file://$USER_HOME$/go/src/github.com/syndtr/gocapability/.git" />
+      <root url="file://$USER_HOME$/go/src/github.com/codegangsta/cli/.git" />
+      <root url="file://$USER_HOME$/go/src/github.com/docker/docker/hack/make/.build-rpm" />
+      <root url="file://$USER_HOME$/go/src/github.com/tinylib/msgp/.git" />
+      <root url="file://$USER_HOME$/go/src/github.com/golang/protobuf/proto/testdata" />
+      <root url="file://$USER_HOME$/go/src/gopkg.in/bsm/ratelimit.v1/.git" />
+      <root url="file://$USER_HOME$/go/src/github.com/go-sql-driver/mysql/.git" />
+      <root url="file://$USER_HOME$/go/src/github.com/godbus/dbus/_examples" />
+      <root url="file://$USER_HOME$/go/src/github.com/docker/docker/.git" />
+      <root url="file://$USER_HOME$/go/src/github.com/tinylib/msgp/_generated" />
+      <root url="file://$USER_HOME$/go/src/gopkg.in/bufio.v1/.git" />
+      <root url="file://$USER_HOME$/go/src/github.com/docker/docker/docs/reference/api/_static" />
+      <root url="file://$USER_HOME$/go/src/github.com/mediocregopher/radix.v2/.git" />
+      <root url="file://$USER_HOME$/go/src/gopkg.in/redis.v3/.git" />
+      <root url="file://$USER_HOME$/go/src/github.com/Sirupsen/logrus/.git" />
+      <root url="file://$USER_HOME$/go/src/github.com/fluent/fluent-logger-golang/_examples" />
+      <root url="file://$USER_HOME$/go/src/github.com/docker/docker/pkg/tarsum/testdata" />
+      <root url="file://$USER_HOME$/go/src/gopkg.in/redis.v3/.test" />
+      <root url="file://$USER_HOME$/go/src/github.com/godbus/dbus/.git" />
+      <root url="file://$USER_HOME$/go/src/github.com/opencontainers/runc/.git" />
+      <root url="file://$USER_HOME$/go/src/github.com/golang/protobuf/protoc-gen-go/testdata" />
+    </excluded>
+  </library>
+</component>
