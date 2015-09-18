@@ -2,22 +2,24 @@ package main
 
 import (
 	"github.com/fluent/fluent-logger-golang/fluent"
-	"fmt"
 	"os"
 	"time"
 	"bufio"
 	"strings"
 	"flag"
+	"log"
+	"gopkg.in/gomail.v2"
 )
 
 func main() {
 	var tag = flag.String("tag", "syslog", "fleuntd tag for logging")
+	var fluent_socket = flag.String("socket", "/tmp/td-agent.sock", "fleuntd socket for logging")
 	flag.Parse()
 	// fmt.Println(*tag)
 
-	logger, err := fluent.New(fluent.Config{FluentSocketPath: "/tmp/td-agent.sock", FluentNetwork: "unix"})
+	logger, err := fluent.New(fluent.Config{FluentSocketPath: *fluent_socket, FluentNetwork: "unix"})
 	if err != nil {
-		fmt.Println(err)
+		log.Fatal(err)
 	}
 
 	var message []string
@@ -38,8 +40,27 @@ func main() {
 		"message": strings.Join(message, "\n" ),
 		"timestamp":  time.Now().String() }
 
-	error := logger.Post(*tag, data)
-	if error != nil {
-		panic(error)
+	if err = logger.Post(*tag, data); err != nil {
+		log.Fatal(err)
 	}
+
+	d := gomail.NewPlainDialer("127.0.0.1", 25, "", "")
+	s, err := d.Dial()
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	m := gomail.NewMessage()
+
+	m.SetHeader("From", "from@mail")
+	m.SetHeader("To", "to@mail")
+	m.SetHeader("Subject", "go-fluentd-stdin")
+	m.SetBody("text/html", strings.Join(message, "\n"))
+
+	if err := gomail.Send(s, m); err != nil {
+		log.Printf("Could not send email to %q: %v", "to@mail", err)
+	}
+	m.Reset()
+
+
 }
