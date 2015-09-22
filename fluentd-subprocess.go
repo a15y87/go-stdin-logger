@@ -44,6 +44,7 @@ func main() {
 
 	select {
 	case <-time.After(3 * time.Second):
+
 		output.Close()
 		if err := cmd.Process.Kill(); err != nil {
 		}

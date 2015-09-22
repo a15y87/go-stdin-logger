@@ -18,6 +18,7 @@
       <root url="file://$USER_HOME$/go/src/github.com/golang/protobuf/.git" />
       <root url="file://$USER_HOME$/go/src/github.com/pwaller/goupx/.git" />
       <root url="file://$USER_HOME$/go/src/github.com/syndtr/gocapability/.git" />
+      <root url="file://$USER_HOME$/go/src/github.com/samuel/go-zookeeper/.git" />
       <root url="file://$USER_HOME$/go/src/github.com/codegangsta/cli/.git" />
       <root url="file://$USER_HOME$/go/src/github.com/docker/docker/hack/make/.build-rpm" />
       <root url="file://$USER_HOME$/go/src/github.com/tinylib/msgp/.git" />
@@ -29,6 +30,7 @@
       <root url="file://$USER_HOME$/go/src/github.com/docker/docker/.git" />
       <root url="file://$USER_HOME$/go/src/github.com/tinylib/msgp/_generated" />
       <root url="file://$USER_HOME$/go/src/gopkg.in/bufio.v1/.git" />
+      <root url="file://$USER_HOME$/go/src/github.com/satori/go.uuid/.git" />
       <root url="file://$USER_HOME$/go/src/github.com/docker/docker/docs/reference/api/_static" />
       <root url="file://$USER_HOME$/go/src/github.com/mediocregopher/radix.v2/.git" />
       <root url="file://$USER_HOME$/go/src/gopkg.in/redis.v3/.git" />

@@ -14,6 +14,10 @@ import (
 func main() {
 	var tag = flag.String("tag", "syslog", "fleuntd tag for logging")
 	var fluent_socket = flag.String("socket", "/tmp/td-agent.sock", "fleuntd socket for logging")
+	var task_name = flag.String("task", "test", "task name")
+	var message_subject =  flag.String("subject", "subject", "message subject")
+	var message_enable = flag.Bool("debug", false, "send email")
+
 	flag.Parse()
 	// fmt.Println(*tag)
 
